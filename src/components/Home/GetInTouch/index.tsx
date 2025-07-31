@@ -13,7 +13,7 @@ const GetInTouch: React.FC = () => {
                         aria-label="Video background showing logistics in motion"
                     >
                         <source
-                            src="/videos/video.mp4"
+                            src="/videos/video2.mp4"
                             type="video/mp4"
                         />
                     </video>
