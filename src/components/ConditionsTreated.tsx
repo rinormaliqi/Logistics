@@ -2,21 +2,21 @@ import { Icon } from "@iconify/react";
 
 const ConditionsTreated = () => {
   const conditions = [
-    "Back & Neck Pain",
-    "Sports Injuries",
-    "Post-Surgical Rehabilitation",
-    "Arthritis & Joint Pain",
-    "Postural Issues",
-    "Chronic Pain Management",
-    "Workplace Injuries",
-    "Muscle Strains & Sprains",
+    "Dhimbje Shpine & Qafe",
+    "Lëndime Sportive",
+    "Rehabilitim Pas Operacionit",
+    "Artrit & Dhimbje Nyjesh",
+    "Probleme Posturale",
+    "Menaxhim i Dhimbjeve Kronike",
+    "Lëndime në Vendin e Punës",
+    "Shtangje & Tërheqje Muskujsh",
   ];
 
   return (
     <section className="bg-gradient-to-b from-green-50 to-white py-20">
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
         
-        {/* Header Section */}
+        {/* Seksioni i Header-it */}
         <div className="mb-16 flex flex-col gap-3">
           <div className="flex gap-2.5 items-center justify-center">
             <span>
@@ -28,18 +28,18 @@ const ConditionsTreated = () => {
               />
             </span>
             <p className="text-base font-semibold text-dark/75">
-              Conditions We Treat
+              Gjendjet që Trajtojmë
             </p>
           </div>
           <h2 className="text-40 lg:text-52 font-medium text-black text-center tracking-tight leading-11 mb-2">
-            Helping you move better, live better.
+            Të ndihmojmë të lëvizni më mirë, të jetoni më mirë.
           </h2>
           <p className="text-xm font-normal text-black/50 text-center max-w-2xl mx-auto">
-            We help patients recover and regain mobility from a wide range of injuries and health conditions.
+            Ndihmojmë pacientët të rikuperohen dhe të rifitojnë lëvizshmërinë nga një gamë e gjerë lëndimesh dhe gjendjesh shëndetësore.
           </p>
         </div>
 
-        {/* Conditions Grid */}
+        {/* Rrjeti i Gjendjeve */}
         <div className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
           {conditions.map((condition, idx) => (
             <div

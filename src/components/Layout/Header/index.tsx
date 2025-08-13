@@ -96,7 +96,7 @@ const Header: React.FC = () => {
                 }`}
               >
                 <Icon icon={'ph:phone-bold'} width={24} height={24} />
-                +383 44 695 321
+                +383 44 468 100
               </Link>
             </div>
             <div>
@@ -104,9 +104,9 @@ const Header: React.FC = () => {
                 onClick={() => setNavbarOpen(!navbarOpen)}
                 className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${isHomepage
                   ? sticky
-                    ? 'text-white bg-dark dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white'
+                    ? 'text-white bg-green-500 dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white'
                     : 'text-dark bg-white dark:text-dark hover:bg-transparent hover:text-white border-white'
-                  : 'bg-dark text-white hover:bg-transparent hover:text-dark dark:bg-white dark:text-dark dark:hover:bg-transparent dark:hover:text-white duration-300'
+                  : 'bg-green-500 text-white hover:bg-transparent hover:text-dark dark:bg-white dark:text-dark dark:hover:bg-transparent dark:hover:text-white duration-300'
                   }`}
                 aria-label='Toggle mobile menu'>
                 <span>
@@ -127,7 +127,7 @@ const Header: React.FC = () => {
 
       <div
         ref={sideMenuRef}
-        className={`fixed top-0 right-0 h-full w-full bg-dark shadow-lg transition-transform duration-300 max-w-2xl ${navbarOpen ? 'translate-x-0' : 'translate-x-full'} z-50 px-20 overflow-auto no-scrollbar`}
+        className={`fixed top-0 right-0 h-full w-full bg-green-300 shadow-lg transition-transform duration-300 max-w-2xl ${navbarOpen ? 'translate-x-0' : 'translate-x-full'} z-50 px-20 overflow-auto no-scrollbar`}
       >
         <div className="flex flex-col h-full justify-between">
           <div className="">
@@ -169,15 +169,15 @@ const Header: React.FC = () => {
             </nav>
           </div>
 
-          <div className='flex flex-col gap-1 my-16 text-white'>
+          <div className='flex flex-col gap-1 my-16 text-black'>
             <p className='text-base sm:text-xm font-normal text-white/40'>
               Contact
             </p>
             <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
-            office@amr-logistics.com
+            office@physio.com
             </Link>
             <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
-            +383 44 695 321
+            +383 44 468 100
             </Link>
           </div>
         </div>

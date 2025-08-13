@@ -11,7 +11,7 @@ import { LanguageProvider } from '@/contexts/LanguageContext'
 const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
-  title: 'AMR logistics',
+  title: 'Bio Center',
   description: 'Rinor Maliqi',
 }
 
