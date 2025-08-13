@@ -7,17 +7,18 @@ import BlogSmall from '@/components/shared/Blog'
 import GetInTouch from '@/components/Home/GetInTouch'
 import FAQ from '@/components/Home/FAQs'
 import ContactUs from './(site)/contactus/page'
+import ClinicTour from '@/components/ClinicTour'
+import ConditionsTreated from '@/components/ConditionsTreated'
+import AboutAndBenefits from '@/components/AboutAndBenefits'
 
 export default function Home() {
   return (
     <main>
       <Hero />
       <Services />
-      {/* <Properties /> */}
-      <FeaturedProperty />
-      {/* <Testimonial /> */}
-      {/* <BlogSmall /> */}
-      <GetInTouch />
+      <AboutAndBenefits/>
+      <ConditionsTreated/>
+      <ClinicTour/>
       <FAQ />
       <ContactUs/>
     </main>
