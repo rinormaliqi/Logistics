@@ -9,31 +9,34 @@ import {
 
 const FAQ: React.FC = () => {
     return (
-        <section id='faqs'>
+        <section id='faqs' className="bg-gradient-to-b from-green-50 via-gray-50 to-white dark:from-[#4cb0a8]/20 dark:via-gray-800 dark:to-gray-900 py-16">
             <div className='container max-w-8xl mx-auto px-5 2xl:px-0'>
-            <div className="grid lg:grid-cols-2 gap-10 items-stretch">
-  {/* Left Image */}
-  <div className='lg:h-full h-auto flex'>
-    <Image
-      src="/images/categories/freight2.jpg"
-      alt='FAQ illustration for logistics'
-      width={680}
-      height={800}
-      className='object-cover w-full h-full rounded-2xl'
-      unoptimized={true}
-    />
-  </div>
-  <div className='lg:px-12 flex flex-col justify-center'>
-                        <p className="text-dark/75 dark:text-white/75 text-base font-semibold flex gap-2">
-                            <Icon icon="mdi:truck-delivery" className="text-2xl text-primary" />
+                <div className="grid lg:grid-cols-2 gap-10 items-stretch">
+                    
+                    {/* Left Image */}
+                    <div className='lg:h-full h-auto flex'>
+                        <Image
+                            src="/images/physio/hero5.jpg"
+                            alt='Physiotherapy FAQ illustration'
+                            width={680}
+                            height={800}
+                            className='object-cover w-full h-full rounded-2xl shadow-lg'
+                            unoptimized={true}
+                        />
+                    </div>
+
+                    {/* Right Content */}
+                    <div className='lg:px-12 flex flex-col justify-center'>
+                        <p className="text-green-700 dark:text-green-300 text-base font-semibold flex gap-2">
+                            <Icon icon="mdi:medical-bag" className="text-2xl text-green-600 dark:text-green-400" />
                             FAQs
                         </p>
-                        <h2 className='lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white'>
+                        <h2 className='lg:text-52 text-40 leading-[1.2] font-medium text-dark dark:text-white mt-2'>
                             Frequently Asked Questions
                         </h2>
-                        <p className='text-dark/50 dark:text-white/50 pr-20'>
-                            Have questions about how our logistics and transportation services work?
-                            We have compiled some of the most common inquiries from our clients.
+                        <p className='text-dark/60 dark:text-white/60 pr-0 md:pr-20 mt-4'>
+                            Here are answers to common questions about our physiotherapy services,
+                            recovery programs, and appointment process.
                         </p>
 
                         <div className="my-8">
@@ -44,33 +47,33 @@ const FAQ: React.FC = () => {
                                 className="w-full flex flex-col gap-6"
                             >
                                 <AccordionItem value="item-1">
-                                    <AccordionTrigger>1. What areas do you cover?</AccordionTrigger>
+                                    <AccordionTrigger>1. What conditions do you treat?</AccordionTrigger>
                                     <AccordionContent>
-                                        We offer nationwide delivery services and can also arrange international shipments upon request. Contact us for more specific coverage details.
+                                        We treat a variety of conditions including sports injuries, chronic pain, post-surgical rehabilitation, arthritis, and mobility issues.
                                     </AccordionContent>
                                 </AccordionItem>
                                 <AccordionItem value="item-2">
-                                    <AccordionTrigger>2. Can I track my shipment in real-time?</AccordionTrigger>
+                                    <AccordionTrigger>2. Do I need a doctor’s referral?</AccordionTrigger>
                                     <AccordionContent>
-                                        Yes, all of our deliveries come with real-time tracking. Once your shipment is picked up, you will receive a tracking link with live updates.
+                                        While a referral is not always required, some insurance providers may request one. Check with your provider or contact us for guidance.
                                     </AccordionContent>
                                 </AccordionItem>
                                 <AccordionItem value="item-3">
-                                    <AccordionTrigger>3. What types of cargo do you handle?</AccordionTrigger>
+                                    <AccordionTrigger>3. How long is a typical session?</AccordionTrigger>
                                     <AccordionContent>
-                                        We handle a wide range of cargo—from small parcels to palletized freight. We also provide temperature-controlled and fragile goods transport.
+                                        Initial assessments usually take 45–60 minutes. Follow-up sessions are typically 30–45 minutes, depending on your treatment plan.
                                     </AccordionContent>
                                 </AccordionItem>
                                 <AccordionItem value="item-4">
-                                    <AccordionTrigger>4. How are shipping rates calculated?</AccordionTrigger>
+                                    <AccordionTrigger>4. What should I wear to my appointment?</AccordionTrigger>
                                     <AccordionContent>
-                                        Rates are based on cargo size, weight, distance, and delivery urgency. You can request a custom quote through our online form.
+                                        Wear comfortable, loose-fitting clothing that allows easy movement and access to the treatment area.
                                     </AccordionContent>
                                 </AccordionItem>
                                 <AccordionItem value="item-5">
-                                    <AccordionTrigger>5. What if my package is delayed?</AccordionTrigger>
+                                    <AccordionTrigger>5. Is physiotherapy covered by insurance?</AccordionTrigger>
                                     <AccordionContent>
-                                        We strive to maintain on-time delivery. If a delay occurs due to unforeseen events, our team will inform you immediately and provide alternate solutions.
+                                        Many insurance plans cover physiotherapy services. We can help you verify your coverage before your first visit.
                                     </AccordionContent>
                                 </AccordionItem>
                             </Accordion>
@@ -83,3 +86,4 @@ const FAQ: React.FC = () => {
 };
 
 export default FAQ;
+

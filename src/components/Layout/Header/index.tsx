@@ -46,7 +46,7 @@ const Header: React.FC = () => {
           <div>
             <Link href='/'>
               <Image
-                src={'/images/header/logo.png'}
+                src={'/physio.png'}
                 alt='logo'
                 width={50}
                 height={30}
@@ -54,7 +54,7 @@ const Header: React.FC = () => {
                 className={`${isHomepage ? sticky ? "block dark:hidden" : "hidden" : sticky ? "block dark:hidden" : "block dark:hidden"}`}
               />
               <Image
-                src={'/images/header/logo.png'}
+                src={'/physio.png'}
                 alt='logo'
                 width={50}
                 height={30}
@@ -86,7 +86,7 @@ const Header: React.FC = () => {
                 className='dark:block hidden text-white'
               />
             </button> */}
-            <LanguageSwitcher/>
+            {/* <LanguageSwitcher/> */}
             <div className={`hidden md:block`}>
               <Link href='#' className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${isHomepage
                 ? sticky
