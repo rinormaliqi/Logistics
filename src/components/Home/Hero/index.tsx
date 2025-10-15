@@ -16,15 +16,48 @@ const Hero: React.FC = () => {
               Bio Center.
             </h1>
             <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4'>
-              <Link
-                href="/contactus"
-                className='px-6 sm:px-8 py-3 sm:py-4 border border-green-600 bg-green-600 text-white hover:bg-green-500 hover:border-green-500 duration-300 text-sm sm:text-base font-semibold rounded-full'
+           
+              <div className="flex gap-4">
+              <Link 
+                href="https://www.facebook.com/share/1BRCWLGMpf/?mibextid=wwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-blue-600 hover:scale-110 hover:shadow-lg hover:-translate-y-1"
               >
-                Rezervo Termin
+                <Icon 
+                  icon="fa6-brands:facebook" 
+                  width={44} 
+                  height={44} 
+                  className="text-blue-600 transition-all duration-300 group-hover:text-white group-hover:scale-105" 
+                />
               </Link>
-              <button className='px-6 sm:px-8 py-3 sm:py-4 border border-green-600 bg-transparent text-green-700 hover:bg-green-50 duration-300 text-sm sm:text-base font-semibold rounded-full'>
-                Na Kontakto
-              </button>
+              <Link 
+                href="https://www.instagram.com/fizioterapi.biocenter?igsh=azFxMnlyNnp6Z25k&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 hover:scale-110 hover:shadow-lg hover:-translate-y-1"
+              >
+                <Icon 
+                  icon="fa6-brands:instagram" 
+                  width={44} 
+                  height={44} 
+                  className="text-pink-600 transition-all duration-300 group-hover:text-white group-hover:scale-105" 
+                />
+              </Link>
+              <Link 
+                href="https://www.tiktok.com/@physiotherapy_biocenter?_t=ZM-903Tw6n8gYN&_r=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-black hover:scale-110 hover:shadow-lg hover:-translate-y-1"
+              >
+                <Icon 
+                  icon="fa6-brands:tiktok" 
+                  width={44} 
+                  height={44} 
+                  className="text-black transition-all duration-300 group-hover:text-white group-hover:scale-105" 
+                />
+              </Link>
+            </div>
             </div>
           </div>
 

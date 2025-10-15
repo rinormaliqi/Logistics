@@ -86,26 +86,85 @@ const Header: React.FC = () => {
                 className='dark:block hidden text-white'
               />
             </button> */}
+            
             {/* <LanguageSwitcher/> */}
-            <div className={`hidden md:block`}>
-              <Link href='#' className={`text-base text-inherit flex items-center gap-2 border-r pr-6 ${isHomepage
-                ? sticky
-                  ? 'text-dark dark:text-white hover:text-primary border-dark dark:border-white'
-                  : 'text-white hover:text-primary'
-                : 'text-dark hover:text-primary'
-                }`}
+   <div className="flex gap-4">
+              <Link 
+                href="https://www.facebook.com/share/1BRCWLGMpf/?mibextid=wwXIfr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-blue-600 hover:scale-110 hover:shadow-lg hover:-translate-y-1"
               >
-                <Icon icon={'ph:phone-bold'} width={24} height={24} />
-                +383 44 468 100
+                <Icon 
+                  icon="fa6-brands:facebook" 
+                  width={24} 
+                  height={24} 
+                  className="text-blue-600 transition-all duration-300 group-hover:text-white group-hover:scale-105" 
+                />
               </Link>
+              <Link 
+                href="https://www.instagram.com/fizioterapi.biocenter?igsh=azFxMnlyNnp6Z25k&utm_source=qr" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 hover:scale-110 hover:shadow-lg hover:-translate-y-1"
+              >
+                <Icon 
+                  icon="fa6-brands:instagram" 
+                  width={24} 
+                  height={24} 
+                  className="text-pink-600 transition-all duration-300 group-hover:text-white group-hover:scale-105" 
+                />
+              </Link>
+              <Link 
+                href="https://www.tiktok.com/@physiotherapy_biocenter?_t=ZM-903Tw6n8gYN&_r=1" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-black hover:scale-110 hover:shadow-lg hover:-translate-y-1"
+              >
+                <Icon 
+                  icon="fa6-brands:tiktok" 
+                  width={24} 
+                  height={24} 
+                  className="text-black transition-all duration-300 group-hover:text-white group-hover:scale-105" 
+                />
+              </Link>
+            </div>
+            <div className={`hidden md:block`}>
+<div
+  onClick={() => {
+    const phoneNumber = '+38344468100';
+    // Try opening WhatsApp app
+    window.location.href = `whatsapp://send?phone=${phoneNumber}`;
+
+    // Fallback to WhatsApp Web if not installed
+    setTimeout(() => {
+      window.open(`https://wa.me/${phoneNumber.replace(/\D/g, '')}`, '_blank');
+    }, 500);
+  }}
+  className={`cursor-pointer text-base text-inherit flex items-center gap-2 border-r pr-6 ${
+    isHomepage
+      ? sticky
+        ? 'text-dark dark:text-dark hover:text-primary border-dark dark:border-white'
+        : 'text-dark hover:text-primary'
+      : 'text-dark hover:text-primary'
+  }`}
+>
+  <Icon icon={'ph:phone-bold'} width={24} height={24} />
+  +383 44 468 100
+</div>
+
+
+
+
+              
             </div>
             <div>
               <button
                 onClick={() => setNavbarOpen(!navbarOpen)}
                 className={`flex items-center gap-3 p-2 sm:px-5 sm:py-3 rounded-full font-semibold hover:cursor-pointer border ${isHomepage
                   ? sticky
-                    ? 'text-white bg-green-500 dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-dark dark:border-white'
-                    : 'text-dark bg-white dark:text-dark hover:bg-transparent hover:text-white border-white'
+                    ? 'text-white bg-green-300 dark:bg-white dark:text-dark dark:hover:text-white dark:hover:bg-dark hover:text-dark hover:bg-white border-none dark:border-none'
+                    : 'text-dark bg-white dark:text-dark hover:bg-transparent hover:text-white border-none'
                   : 'bg-green-500 text-white hover:bg-transparent hover:text-dark dark:bg-white dark:text-dark dark:hover:bg-transparent dark:hover:text-white duration-300'
                   }`}
                 aria-label='Toggle mobile menu'>
@@ -174,11 +233,74 @@ const Header: React.FC = () => {
               Contact
             </p>
             <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
-            office@physio.com
+fizioterapiabiocenter@gmail.com
             </Link>
-            <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
-            +383 44 468 100
-            </Link>
+ <div
+  onClick={() => {
+    const phoneNumber = '+38344468100';
+    // Try opening WhatsApp app
+    window.location.href = `whatsapp://send?phone=${phoneNumber}`;
+
+    // Fallback to WhatsApp Web if not installed
+    setTimeout(() => {
+      window.open(`https://wa.me/${phoneNumber.replace(/\D/g, '')}`, '_blank');
+    }, 500);
+  }}
+  className={`cursor-pointer text-base text-inherit flex items-center gap-2 border-r pr-6 ${
+    isHomepage
+      ? sticky
+        ? 'text-dark dark:text-dark hover:text-primary border-dark dark:border-white'
+        : 'text-dark hover:text-primary'
+      : 'text-dark hover:text-primary'
+  }`}
+>
+  <Icon icon={'ph:phone-bold'} width={24} height={24} />
+  +383 44 468 100
+</div>
+
+
+            {/* Social Media Icons */}
+        <div className="flex gap-4 mt-6">
+              <Link 
+                href="https://facebook.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-blue-600 hover:scale-110 hover:shadow-lg hover:-translate-y-1"
+              >
+                <Icon 
+                  icon="fa6-brands:facebook" 
+                  width={24} 
+                  height={24} 
+                  className="text-blue-600 transition-all duration-300 group-hover:text-white group-hover:scale-105" 
+                />
+              </Link>
+              <Link 
+                href="https://instagram.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 hover:scale-110 hover:shadow-lg hover:-translate-y-1"
+              >
+                <Icon 
+                  icon="fa6-brands:instagram" 
+                  width={24} 
+                  height={24} 
+                  className="text-pink-600 transition-all duration-300 group-hover:text-white group-hover:scale-105" 
+                />
+              </Link>
+              <Link 
+                href="https://tiktok.com" 
+                target="_blank" 
+                rel="noopener noreferrer"
+                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-black hover:scale-110 hover:shadow-lg hover:-translate-y-1"
+              >
+                <Icon 
+                  icon="fa6-brands:tiktok" 
+                  width={24} 
+                  height={24} 
+                  className="text-black transition-all duration-300 group-hover:text-white group-hover:scale-105" 
+                />
+              </Link>
+            </div>
           </div>
         </div>
       </div>

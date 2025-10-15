@@ -12,7 +12,7 @@ const font = Bricolage_Grotesque({ subsets: ["latin"] });
 
 export const metadata: Metadata = {
   title: 'Bio Center',
-  description: 'Rinor Maliqi',
+  description: 'Bio Center',
 }
 
 export default function RootLayout({

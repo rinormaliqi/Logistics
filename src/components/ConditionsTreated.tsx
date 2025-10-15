@@ -1,16 +1,18 @@
 import { Icon } from "@iconify/react";
 
 const ConditionsTreated = () => {
-  const conditions = [
-    "Dhimbje Shpine & Qafe",
-    "Lëndime Sportive",
-    "Rehabilitim Pas Operacionit",
-    "Artrit & Dhimbje Nyjesh",
-    "Probleme Posturale",
-    "Menaxhim i Dhimbjeve Kronike",
-    "Lëndime në Vendin e Punës",
-    "Shtangje & Tërheqje Muskujsh",
-  ];
+const conditions = [
+  "Terapi Manuale",
+  "Elektroterapi",
+  "Kiropraktike",
+  "Rehabilitim post Kirurgjikal",
+  "Rehabilitim Sportiv",
+  "Rehabilitim Postural",
+  "Terapi Ushtrimore",
+  "Pressoterapi",
+  "Dry cupping",
+  "Konsulte Fizioterapeutike",
+];
 
   return (
     <section className="bg-gradient-to-b from-green-50 to-white py-20">

@@ -3,10 +3,10 @@ import Image from "next/image";
 
 const ClinicTour = () => {
   const images = [
-    { src: "/images/physio/rec.jpeg", alt: "Zona e pritjes" },
-    { src: "/images/physio/treatment-room.jpg", alt: "Dhoma e trajtimit" },
-    { src: "/images/physio/gym.jpg", alt: "Pale për rehabilitim" },
-    { src: "/images/physio/equipments.jpg", alt: "Pajisje fizioterapie" },
+    { src: "/images/physio/img1rec.jpeg", alt: "Zona e pritjes" },
+    { src: "/images/physio/img2rec.jpeg", alt: "Dhoma e trajtimit" },
+    { src: "/images/physio/img3rec.jpeg", alt: "Pajisje fizioterapie" },
+    { src: "/images/physio/img4rec.jpeg", alt: "Dhoma e trajtimit" },
   ];
 
   return (
