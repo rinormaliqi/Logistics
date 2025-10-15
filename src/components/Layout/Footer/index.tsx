@@ -16,12 +16,6 @@ const Footer = () => {
               <h2 className="text-gray-800 leading-[1.2] text-40 font-medium mb-6 lg:max-w-3/4">
                 Filloni udhëtimin tuaj drejt shërimit — rezervoni seancën sot.
               </h2>
-              <Link
-                href="/book-appointment"
-                className="bg-primary text-base font-semibold py-4 px-8 rounded-full text-white hover:bg-primary/90 duration-300 hover:cursor-pointer"
-              >
-                Rezervo Seancë
-              </Link>
             </div>
 
             {/* Navigimi i Footer-it */}

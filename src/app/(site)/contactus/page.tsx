@@ -39,7 +39,7 @@ export default function ContactUs() {
       <div className="border border-green-200 dark:border-green-800 rounded-2xl p-4 shadow-xl bg-gradient-to-br from-green-50 via-gray-50 to-white dark:from-green-900/20 dark:via-gray-900 dark:to-gray-950">
         <div className="flex flex-col lg:flex-row gap-12">
           {/* Fotoja */}
-          <div className="relative w-full lg:w-[55%] aspect-[3/4] lg:aspect-auto lg:h-[700px]">
+          <div className="relative w-full lg:w-[100%] aspect-[3/4] lg:aspect-auto lg:h-[700px]">
             <Image
               src="/images/physio/hero3.jpg"
               alt="Ndihmë Fizioterapike"
@@ -99,50 +99,7 @@ export default function ContactUs() {
           </div>
 
           {/* Forma */}
-          <div className="w-full lg:w-[45%] flex items-center">
-            <div className="w-full">
-              <h4 className="text-2xl md:text-3xl font-medium mb-8 text-black dark:text-white">
-                Rezervoni një Takim
-              </h4>
-              <form>
-                <div className="flex flex-col gap-8">
-                  <div className="flex flex-col lg:flex-row gap-6">
-                    <input
-                      type="text"
-                      name="fullName"
-                      placeholder="Emri i Plotë*"
-                      required
-                      className="px-6 py-4 border border-green-200 dark:border-green-800 rounded-full outline-green-500 focus:outline w-full"
-                    />
-                    <input
-                      type="tel"
-                      name="phone"
-                      placeholder="Numri i Telefonit*"
-                      required
-                      className="px-6 py-4 border border-green-200 dark:border-green-800 rounded-full outline-green-500 focus:outline w-full"
-                    />
-                  </div>
-                  <input
-                    type="email"
-                    name="email"
-                    placeholder="Email*"
-                    required
-                    className="px-6 py-4 border border-green-200 dark:border-green-800 rounded-full outline-green-500 focus:outline"
-                  />
-                  <textarea
-                    rows={6}
-                    name="message"
-                    placeholder="Na tregoni për lëndimin tuaj, dhimbjet ose nevojat për rikuperim."
-                    required
-                    className="px-6 py-4 border border-green-200 dark:border-green-800 rounded-2xl outline-green-500 focus:outline min-h-[180px]"
-                  ></textarea>
-                  <button className="px-8 py-4 rounded-full bg-green-600 hover:bg-green-700 text-white text-lg font-semibold w-full mobile:w-fit transition-colors duration-300">
-                    Dërgo Kerkesën
-                  </button>
-                </div>
-              </form>
-            </div>
-          </div>
+
         </div>
       </div>
 

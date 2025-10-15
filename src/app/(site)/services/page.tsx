@@ -33,7 +33,7 @@ const Categories = () => {
           {/* Kartat e Kategorive */}
           <div className="lg:col-span-6 col-span-12">
             <div className="relative rounded-2xl overflow-hidden group">
-              <Link href="/services/manual-therapy">
+              <Link href="/services">
                 <Image
                   src="/images/physio/manual.jpg"
                   alt="Terapi Manuale"
@@ -44,7 +44,7 @@ const Categories = () => {
                 />
               </Link>
               <Link
-                href="/services/manual-therapy"
+                href="/services"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between p-6 sm:p-10 group-hover:top-0 duration-500"
               >
                 <div className="flex justify-end">
@@ -65,7 +65,7 @@ const Categories = () => {
           {/* Rreshti i dytë */}
           <div className="lg:col-span-6 col-span-12">
             <div className="relative rounded-2xl overflow-hidden group h-full">
-              <Link href="/services/sports-rehabilitation">
+              <Link href="/services">
                 <Image
                   src="/images/physio/sports.jpg"
                   alt="Rehabilitim Sportiv"
@@ -76,7 +76,7 @@ const Categories = () => {
                 />
               </Link>
               <Link
-                href="/services/sports-rehabilitation"
+                href="/services"
                 className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between p-6 sm:p-10 group-hover:top-0 duration-500"
               >
                 <div className="flex justify-end">
@@ -100,7 +100,7 @@ const Categories = () => {
               
               {/* Karta 3 */}
               <div className="relative rounded-2xl overflow-hidden group">
-                <Link href="/services/post-surgery-rehab">
+                <Link href="/services">
                   <Image
                     src="/images/physio/posts.jpg"
                     alt="Rehabilitim Pas Operacionit"
@@ -111,7 +111,7 @@ const Categories = () => {
                   />
                 </Link>
                 <Link
-                  href="/services/post-surgery-rehab"
+                  href="/services"
                   className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between p-4 sm:p-6 group-hover:top-0 duration-500"
                 >
                   <div className="flex justify-end">
@@ -130,7 +130,7 @@ const Categories = () => {
 
               {/* Karta 4 */}
               <div className="relative rounded-2xl overflow-hidden group">
-                <Link href="/services/pediatric-physio">
+                <Link href="/services">
                   <Image
                     src="/images/physio/child.jpg"
                     alt="Fizioterapi Pediatrike"
@@ -141,7 +141,7 @@ const Categories = () => {
                   />
                 </Link>
                 <Link
-                  href="/services/pediatric-physio"
+                  href="/services"
                   className="absolute w-full h-full bg-gradient-to-b from-black/0 to-black/80 top-full flex flex-col justify-between p-4 sm:p-6 group-hover:top-0 duration-500"
                 >
                   <div className="flex justify-end">
