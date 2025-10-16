@@ -4,7 +4,7 @@ import Image from "next/image";
 const AboutAndBenefits = () => {
     const staffMembers = [
         {
-            name: "Fizioterapeut Gezim Zogu",
+            name: "Fizioterapeut Gzim Zogu",
             image: "/gezim.jpeg",
             description: "Kontakto tani dhe merr trajtimin e duhur për problemin tënd me fizioterapi profesionale",
             specialties: ["+383 44 468 100"]

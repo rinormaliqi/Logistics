@@ -1,3 +1,4 @@
+"use client";
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
@@ -22,12 +23,17 @@ const Categories = () => {
               Ofrojmë programe trajtimi të personalizuara për të rivendosur lëvizshmërinë tuaj,
               reduktuar dhimbjen dhe për t’ju ndihmuar të jetoni më mirë.
             </p>
-            <Link
-              href="/services"
+            <button
+                 onClick={() => {
+      const section = document.getElementById('services');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }}
               className="py-3 px-6 sm:py-4 sm:px-8 bg-green-600 text-base block w-fit text-white rounded-full font-semibold mt-6 hover:bg-green-500 duration-300"
             >
               Shiko të gjitha trajtimet
-            </Link>
+            </button>
           </div>
 
           {/* Kartat e Kategorive */}

@@ -19,7 +19,7 @@ const conditions = [
       <div className="container max-w-8xl mx-auto px-5 2xl:px-0">
         
         {/* Seksioni i Header-it */}
-        <div className="mb-16 flex flex-col gap-3">
+        <div id="services" className="mb-16 flex flex-col gap-3">
           <div className="flex gap-2.5 items-center justify-center">
             <span>
               <Icon
