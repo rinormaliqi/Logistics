@@ -133,13 +133,7 @@ const Header: React.FC = () => {
 <div
   onClick={() => {
     const phoneNumber = '+38344468100';
-    // Try opening WhatsApp app
-    window.location.href = `whatsapp://send?phone=${phoneNumber}`;
-
-    // Fallback to WhatsApp Web if not installed
-    setTimeout(() => {
-      window.open(`https://wa.me/${phoneNumber.replace(/\D/g, '')}`, '_blank');
-    }, 500);
+    window.location.href = `tel:${phoneNumber}`;
   }}
   className={`cursor-pointer text-base text-inherit flex items-center gap-2 border-r pr-6 ${
     isHomepage
@@ -152,6 +146,7 @@ const Header: React.FC = () => {
   <Icon icon={'ph:phone-bold'} width={24} height={24} />
   +383 44 468 100
 </div>
+
 
 
 
@@ -235,16 +230,10 @@ const Header: React.FC = () => {
             <Link href="#" className='text-base sm:text-xm font-medium text-inherit hover:text-primary'>
 fizioterapiabiocenter@gmail.com
             </Link>
- <div
+<div
   onClick={() => {
     const phoneNumber = '+38344468100';
-    // Try opening WhatsApp app
-    window.location.href = `whatsapp://send?phone=${phoneNumber}`;
-
-    // Fallback to WhatsApp Web if not installed
-    setTimeout(() => {
-      window.open(`https://wa.me/${phoneNumber.replace(/\D/g, '')}`, '_blank');
-    }, 500);
+    window.location.href = `tel:${phoneNumber}`;
   }}
   className={`cursor-pointer text-base text-inherit flex items-center gap-2 border-r pr-6 ${
     isHomepage
@@ -257,6 +246,8 @@ fizioterapiabiocenter@gmail.com
   <Icon icon={'ph:phone-bold'} width={24} height={24} />
   +383 44 468 100
 </div>
+
+
 
 
             {/* Social Media Icons */}

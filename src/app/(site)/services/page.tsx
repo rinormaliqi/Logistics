@@ -1,7 +1,14 @@
 import Image from "next/image";
 import { Icon } from "@iconify/react";
 import Link from "next/link";
-
+import { Metadata } from "next";
+export const metadata: Metadata = {
+  title: "Shërbimet e Fizioterapisë | BioCenter KS",
+  description: "Zbuloni terapitë tona profesionale për dhimbje shpine, rehabilitim sportiv dhe terapi pas operacionit.",
+  alternates: {
+    canonical: "https://www.biocenter-ks.com/services",
+  },
+};
 const Categories = () => {
   return (
     <section className="relative overflow-hidden bg-gradient-to-b from-green-50 via-gray-50 to-white py-12">
