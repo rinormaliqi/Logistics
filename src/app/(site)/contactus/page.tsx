@@ -32,7 +32,7 @@ export default function ContactUs() {
           <p className="text-xm font-normal tracking-tight text-black/60 dark:text-white/60 leading-6">
             Pavarësisht nëse keni nevojë për rikuperim nga lëndime, trajtim të
             dhimbjeve kronike apo mbështetje për lëvizshmëri, fizioterapistët
-            tanë ekspertë janë këtu për t'ju ndihmuar.
+            tanë ekspertë janë këtu për tju ndihmuar.
           </p>
         </div>
       </div>
