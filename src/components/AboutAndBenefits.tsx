@@ -6,19 +6,19 @@ const AboutAndBenefits = () => {
         {
             name: "Fizioterapeut Gezim Zogu",
             image: "/gezim.jpeg",
-            description: "Kontakto tani dhe merre trajtimin e duhur për problemin tënd me fizioterapi profesionale",
+            description: "Kontakto tani dhe merr trajtimin e duhur për problemin tënd me fizioterapi profesionale",
             specialties: ["+383 44 468 100"]
         },
         {
             name: "Fizioterapeut Butrint Shala",
             image: "/butrint.jpeg",
-            description: "Kontakto tani dhe merre trajtimin e duhur për problemin tënd me fizioterapi profesionale",
+            description: "Kontakto tani dhe merr trajtimin e duhur për problemin tënd me fizioterapi profesionale",
             specialties: ["+383 44 468 100"]
         },
         {
             name: "Menagjere Administrative Genta Bllaca",
             image: "/genta.jpeg",
-            description: "Kontakto tani dhe merre trajtimin e duhur për problemin tënd me fizioterapi profesionale",
+            description: "Kontakto tani dhe merr trajtimin e duhur për problemin tënd me fizioterapi profesionale",
             specialties: ["+383 44 468 100"]
         }
     ];
