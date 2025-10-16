@@ -9,7 +9,7 @@ export const metadata: Metadata = {
 
 export default function ContactUs() {
   return (
-    <div className="container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-44 pb-14 md:pb-28">
+    <div id="contact" className="container max-w-8xl mx-auto px-5 2xl:px-0 pt-32 md:pt-44 pb-14 md:pb-28">
       <div className="mb-16">
         <div className="flex gap-2.5 items-center justify-center mb-3">
           <span>
@@ -79,7 +79,7 @@ export default function ContactUs() {
                       className="flex-shrink-0"
                     />
                     <p className="text-lg font-normal group-hover:text-green-400 transition-colors">
-                      info@fizioterapi.com
+                      fizioterapiabiocenter@gmail.com
                     </p>
                   </div>
                 </Link>
