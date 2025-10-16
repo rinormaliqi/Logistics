@@ -101,7 +101,7 @@ const Hero: React.FC = () => {
     <Icon icon="mdi:clock-outline" width={24} className="text-green-700 mt-1" />
     <div className="text-xs sm:text-sm md:text-base font-normal">
       <p className="block sm:inline">E Hënë - E Premte</p>
-      <span className="block sm:inline text-green-700 font-bold"> 09:00 - 17:00</span>
+      <span className="block sm:inline text-green-700 font-bold"> 12:00 -20:00</span>
     </div>
   </div>
 
