@@ -1,3 +1,4 @@
+"use client";
 import { Icon } from '@iconify/react/dist/iconify.js'
 import Image from 'next/image'
 import Link from 'next/link'
@@ -11,54 +12,41 @@ const Hero: React.FC = () => {
           {/* Teksti kryesor */}
           <div className='relative text-gray-800 text-center md:text-start z-10 md:mt-20'>
             <p className='text-green-700 text-sm sm:text-base font-medium'>Kujdes i Personalizuar</p>
-            <h1 className='text-gray-900 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight md:max-w-2xl mt-4 mb-6'>
-              Shërohu. Rikthehu...<br />
+            <h1 className='text-gray-700 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight md:max-w-2xl mt-4 mb-6'>
+              Të rikthejme levizjen së bashku <br />
               Bio Center.
             </h1>
-            <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4'>
-           
-              <div className="flex gap-4">
-              <Link 
-                href="https://www.facebook.com/share/1BRCWLGMpf/?mibextid=wwXIfr" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-blue-600 hover:scale-110 hover:shadow-lg hover:-translate-y-1"
-              >
-                <Icon 
-                  icon="fa6-brands:facebook" 
-                  width={44} 
-                  height={44} 
-                  className="text-blue-600 transition-all duration-300 group-hover:text-white group-hover:scale-105" 
-                />
-              </Link>
-              <Link 
-                href="https://www.instagram.com/fizioterapi.biocenter?igsh=azFxMnlyNnp6Z25k&utm_source=qr" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-gradient-to-r hover:from-purple-600 hover:via-pink-600 hover:to-orange-500 hover:scale-110 hover:shadow-lg hover:-translate-y-1"
-              >
-                <Icon 
-                  icon="fa6-brands:instagram" 
-                  width={44} 
-                  height={44} 
-                  className="text-pink-600 transition-all duration-300 group-hover:text-white group-hover:scale-105" 
-                />
-              </Link>
-              <Link 
-                href="https://www.tiktok.com/@physiotherapy_biocenter?_t=ZM-903Tw6n8gYN&_r=1" 
-                target="_blank" 
-                rel="noopener noreferrer"
-                className="group p-3 bg-white/10 rounded-full transition-all duration-300 hover:bg-black hover:scale-110 hover:shadow-lg hover:-translate-y-1"
-              >
-                <Icon 
-                  icon="fa6-brands:tiktok" 
-                  width={44} 
-                  height={44} 
-                  className="text-black transition-all duration-300 group-hover:text-white group-hover:scale-105" 
-                />
-              </Link>
-            </div>
-            </div>
+<div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4'>
+
+  {/* Butoni për scroll te #staff */}
+  <button
+    onClick={() => {
+      const section = document.getElementById('about');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }}
+    className="py-3 px-6 sm:py-4 sm:px-8 bg-green-600 text-white rounded-full font-semibold text-sm sm:text-base hover:bg-green-500 duration-300"
+  >
+    Ekipa
+  </button>
+
+  {/* Butoni për scroll te #contact */}
+  <button
+    onClick={() => {
+      const section = document.getElementById('contact');
+      if (section) {
+        section.scrollIntoView({ behavior: 'smooth' });
+      }
+    }}
+    className="py-3 px-6 sm:py-4 sm:px-8 bg-[#25D366] text-white rounded-full font-semibold text-sm sm:text-base hover:opacity-90 duration-300"
+  >
+    Na Kontakto
+  </button>
+
+</div>
+
+
           </div>
 
           {/* Foto në mobile */}
@@ -107,14 +95,27 @@ const Hero: React.FC = () => {
               <p className='text-xs sm:text-sm md:text-base font-normal text-center'>Orar Fleksibel</p>
             </div>
 
-            <div className='flex flex-col items-center gap-1'>
-              <p className='text-xl sm:text-2xl md:text-3xl font-medium text-green-700 text-center'>
-                08:00-18:00
-              </p>
-              <p className='text-xs sm:text-sm md:text-base font-normal text-gray-500 text-center'>
-                E hënë - E premte
-              </p>
-            </div>
+<div className="space-y-2">
+  {/* E Hënë - E Premte */}
+  <div className="flex items-start gap-2">
+    <Icon icon="mdi:clock-outline" width={24} className="text-green-700 mt-1" />
+    <div className="text-xs sm:text-sm md:text-base font-normal">
+      <p className="block sm:inline">E Hënë - E Premte</p>
+      <span className="block sm:inline text-green-700 font-bold"> 09:00 - 17:00</span>
+    </div>
+  </div>
+
+  {/* E Shtunë */}
+  <div className="flex items-start gap-2">
+    <Icon icon="mdi:clock-outline" width={24} className="text-green-700 mt-1" />
+    <div className="text-xs sm:text-sm md:text-base font-normal">
+      <p className="block sm:inline">E Shtunë</p>
+      <span className="block sm:inline text-green-700 font-bold"> 12:00 - 16:00</span>
+    </div>
+  </div>
+</div>
+
+
 
           </div>
         </div>

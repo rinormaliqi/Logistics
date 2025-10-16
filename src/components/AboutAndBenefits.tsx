@@ -6,20 +6,20 @@ const AboutAndBenefits = () => {
         {
             name: "Fizioterapeut Gezim Zogu",
             image: "/gezim.jpeg",
-            description: "Specializuar në rehabilitim pas operacioneve ortopedike dhe trajtimin e dhimbjeve kronike të shpinës. Me mbi 10 vjet përvojë në fizioterapi.",
-            specialties: ["Rehabilitim ortopedik", "Trajtim i dhimbjeve të shpinës", "Terapi manuale"]
+            description: "Kontakto tani dhe merre trajtimin e duhur për problemin tënd me fizioterapi profesionale",
+            specialties: ["+383 44 468 100"]
         },
         {
             name: "Fizioterapeut Butrint Shala",
             image: "/butrint.jpeg",
-            description: "Ekspert në fizioterapi sportive dhe rikuperim nga lëndimet atletike. Ka punuar me atletë profesionistë të disa sporteve.",
-            specialties: ["Fizioterapi sportive", "Rikuperim nga lëndimet", "Elektroterapi"]
+            description: "Kontakto tani dhe merre trajtimin e duhur për problemin tënd me fizioterapi profesionale",
+            specialties: ["+383 44 468 100"]
         },
         {
             name: "Menagjere Administrative Genta Bllaca",
             image: "/genta.jpeg",
-            description: "Menaxhon të gjitha aspektet administrative të klinikës, duke siguruar që pacientët të kenë një përvojë të qetë dhe të organizuar.",
-            specialties: ["Menaxhim klinike", "Koordinim të pacientëve", "Shërbim ndaj klientit"]
+            description: "Kontakto tani dhe merre trajtimin e duhur për problemin tënd me fizioterapi profesionale",
+            specialties: ["+383 44 468 100"]
         }
     ];
 
@@ -78,16 +78,28 @@ const AboutAndBenefits = () => {
                                 {/* Specialties */}
                                 <div className="mt-4">
                                     <h4 className="text-green-700 dark:text-green-400 font-medium mb-2 flex items-center gap-2">
-                                        <Icon icon="mdi:star-circle" className="text-lg" />
-                                        Specialitete:
+                                        <Icon icon="mdi:phone" className="text-lg" />
+                                        Telefono:
                                     </h4>
                                     <ul className="space-y-2">
-                                        {member.specialties.map((specialty, idx) => (
-                                            <li key={idx} className="flex items-start gap-2 text-dark/70 dark:text-white/70">
-                                                <Icon icon="mdi:check" className="text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0" />
-                                                <span>{specialty}</span>
-                                            </li>
-                                        ))}
+                      {member.specialties.map((specialty, idx) => (
+  <li
+    key={idx}
+    className="flex items-start gap-2 text-dark/70 dark:text-white/70 hover:text-green-600 dark:hover:text-green-400 transition duration-200"
+  >
+    <a
+      href={`tel:${specialty.replace(/\s/g, '')}`}
+      className="flex items-start gap-2"
+    >
+      <Icon
+        icon="mdi:phone"
+        className="text-green-600 dark:text-green-400 mt-0.5 flex-shrink-0"
+      />
+      <span>{specialty}</span>
+    </a>
+  </li>
+))}
+
                                     </ul>
                                 </div>
                             </div>
