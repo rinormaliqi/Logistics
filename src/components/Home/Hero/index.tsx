@@ -12,10 +12,11 @@ const Hero: React.FC = () => {
           {/* Teksti kryesor */}
           <div className='relative text-gray-800 text-center md:text-start z-10 md:mt-20'>
             <p className='text-green-700 text-sm sm:text-base font-medium'>Kujdes i Personalizuar</p>
-            <h1 className='text-gray-700 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-semibold tracking-tight md:max-w-2xl mt-4 mb-6'>
-              Të rikthejme levizjen së bashku <br />
-              Bio Center.
-            </h1>
+     <h1 className="text-gray-700 text-4xl sm:text-5xl md:text-6xl lg:text-7xl font-[Helvetica] font-semibold tracking-tight md:max-w-2xl mt-4 mb-6">
+  Të rikthejme levizjen së bashku <br />
+  Bio Center.
+</h1>
+
 <div className='flex flex-col xs:flex-row justify-center md:justify-start gap-4'>
 
   {/* Butoni për scroll te #staff */}

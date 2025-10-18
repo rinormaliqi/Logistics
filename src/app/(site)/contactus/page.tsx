@@ -38,122 +38,100 @@ export default function ContactUs() {
       </div>
 
       {/* Seksioni Kryesor */}
-      <div className="border border-green-200 dark:border-green-800 rounded-2xl p-4 shadow-xl bg-gradient-to-br from-green-50 via-gray-50 to-white dark:from-green-900/20 dark:via-gray-900 dark:to-gray-950">
-        <div className="flex flex-col lg:flex-row gap-12">
-          {/* Fotoja dhe Kontaktet */}
-          <div className="relative w-full lg:w-[100%] aspect-[3/4] lg:aspect-auto lg:h-[700px]">
-            <Image
-              src="/images/physio/hero3.jpg"
-              alt="Ndihmë Fizioterapike"
-              fill
-              className="rounded-2xl object-cover shadow-lg"
-              unoptimized
-            />
-            <div className="absolute inset-0 bg-gradient-to-t from-black/60 via-black/20 to-transparent rounded-2xl p-6 lg:p-12 flex flex-col justify-between">
-              <div>
-                <h5 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-white mb-4">
-                  Ekipi ynë Mjekësor
-                </h5>
-                <p className="text-base md:text-lg font-normal text-white/80 max-w-md">
-                  Bisedoni direkt me një fizioterapist ose rezervoni konsultimin
-                  tuaj fillestar.
-                </p>
-              </div>
+<div className="border border-black dark:border-green-800 rounded-2xl p-4 shadow-xl">
+  <div className="flex flex-col lg:flex-row lg:gap-12">
+    {/* Contact Content - Improved responsive layout */}
+    <div className="w-full lg:w-2/3 p-6 md:p-8 lg:p-12 flex flex-col justify-between">
+      <div className="mb-8 lg:mb-12">
+        <h5 className="text-2xl md:text-3xl lg:text-4xl font-medium tracking-tight text-black mb-4">
+          Ekipi ynë Mjekësor
+        </h5>
+        <p className="text-base md:text-lg font-normal text-black max-w-md">
+          Bisedoni direkt me një fizioterapist ose rezervoni konsultimin tuaj fillestar.
+        </p>
+      </div>
 
-              {/* Kontaktet */}
-              <div className="flex flex-col gap-6 text-white">
-                {/* Thirrje direkte */}
-                <Link href={`tel:${phoneNumber}`} className="w-fit">
-                  <div className="flex items-center gap-4 group w-fit">
-                    <Icon
-                      icon="ph:phone"
-                      width={32}
-                      height={32}
-                      className="flex-shrink-0"
-                    />
-                    <p className="text-lg font-normal group-hover:text-green-400 transition-colors">
-                      {phoneNumber}
-                    </p>
-                  </div>
-                </Link>
-
-                {/* WhatsApp & Viber */}
-                <div className="flex flex-col sm:flex-col gap-3 sm:gap-4 mt-1 ml-[-12]">
-                  {/* WhatsApp */}
-                  <Link
-                    href={`https://wa.me/${phoneNumber.replace(/\D/g, "")}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-4 p-3 rounded-xl w-fit transition-all duration-300 hover:bg-green-500/10 hover:scale-[1.02]"
-                  >
-                    <Icon
-                      icon="ph:whatsapp-logo"
-                      width={30}
-                      height={30}
-                      className="flex-shrink-0 text-white group-hover:text-green-400 transition-colors cursor-pointer"
-                    />
-                    <p className="text-lg font-normal group-hover:text-green-400 transition-colors">
-                      Na shkruaj ne WhatsApp
-                    </p>
-                  </Link>
-
-                  {/* Viber */}
-                  <Link
-                    href={`viber://chat?number=${encodedNumber}`}
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    className="group flex items-center gap-4 p-3 rounded-xl w-fit transition-all duration-300 hover:bg-[#7360F2]/10 hover:scale-[1.02]"
-                  >
-                    <Icon
-                      icon="ph:phone"
-                      width={30}
-                      height={30}
-                      className="flex-shrink-0 text-white group-hover:text-[#8a7df5] transition-colors cursor-pointer"
-                    />
-                    <p className="text-lg font-normal group-hover:text-[#8a7df5] transition-colors">
-                      Na shkruaj ne Viber
-                    </p>
-                  </Link>
-                </div>
-
-                {/* Email */}
-                <Link
-                  href={"mailto:fizioterapiabiocenter@gmail.com"}
-                  className="w-fit"
-                >
-                  <div className="flex items-center gap-4 group w-fit">
-                    <Icon
-                      icon="ph:envelope-simple"
-                      width={32}
-                      height={32}
-                      className="flex-shrink-0"
-                    />
-                    <p className="text-lg font-normal group-hover:text-green-400 transition-colors">
-                      fizioterapiabiocenter@gmail.com
-                    </p>
-                  </div>
-                </Link>
-
-                {/* Adresa */}
-                <div className="flex items-center gap-4">
-                  <Icon
-                    icon="ph:map-pin"
-                    width={32}
-                    height={32}
-                    className="flex-shrink-0"
-                  />
-                  <p className="text-lg font-normal">
-                    Qendra e Fizioterapisë Bio Center, Prishtinë, Kosovë
-                  </p>
-                </div>
-              </div>
-            </div>
+      {/* Kontaktet - Equal spacing for all items */}
+      <div className="flex flex-col gap-6 md:gap-6 text-black">
+        {/* Phone */}
+        <Link href={`tel:${phoneNumber}`} className="w-fit">
+          <div className="flex items-center gap-4 group w-fit p-2 rounded-lg transition-all duration-300 hover:bg-gray-100/50 hover:scale-[1.02]">
+            <Icon icon="ph:phone" width={32} height={32} className="flex-shrink-0" />
+            <p className="text-lg font-normal group-hover:text-green-400 transition-colors">
+              {phoneNumber}
+            </p>
           </div>
+        </Link>
 
-          {/* Forma */}
-          {/* (mund të vendosësh formën këtu më vonë) */}
+        {/* WhatsApp */}
+        <Link
+          href={`https://wa.me/${phoneNumber.replace(/\D/g, "")}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center gap-4 p-2 rounded-lg w-fit transition-all duration-300 hover:bg-green-500/10 hover:scale-[1.02]"
+        >
+          <Icon
+            icon="ph:whatsapp-logo"
+            width={32}
+            height={32}
+            className="flex-shrink-0 text-black group-hover:text-green-400 transition-colors"
+          />
+          <p className="text-lg font-normal group-hover:text-green-400 transition-colors">
+            Na shkruaj ne WhatsApp
+          </p>
+        </Link>
+
+        {/* Viber */}
+        <Link
+          href={`viber://chat?number=${encodedNumber}`}
+          target="_blank"
+          rel="noopener noreferrer"
+          className="group flex items-center gap-4 p-2 rounded-lg w-fit transition-all duration-300 hover:bg-[#7360F2]/10 hover:scale-[1.02]"
+        >
+          <Icon
+            icon="ph:phone"
+            width={32}
+            height={32}
+            className="flex-shrink-0 text-black group-hover:text-[#8a7df5] transition-colors"
+          />
+          <p className="text-lg font-normal group-hover:text-[#8a7df5] transition-colors">
+            Na shkruaj ne Viber
+          </p>
+        </Link>
+
+        {/* Email */}
+        <Link href={"mailto:fizioterapiabiocenter@gmail.com"} className="w-fit">
+          <div className="flex items-center gap-4 group w-fit p-2 rounded-lg transition-all duration-300 hover:bg-gray-100/50 hover:scale-[1.02]">
+            <Icon icon="ph:envelope-simple" width={32} height={32} className="flex-shrink-0" />
+            <p className="text-lg font-normal group-hover:text-green-400 transition-colors">
+              fizioterapiabiocenter@gmail.com
+            </p>
+          </div>
+        </Link>
+
+        {/* Location */}
+        <div className="flex items-start gap-4 p-2 rounded-lg transition-all duration-300 hover:bg-gray-100/50">
+          <Icon icon="ph:map-pin" width={32} height={32} className="flex-shrink-0 mt-1" />
+          <p className="text-lg font-normal">
+            Qendra e Fizioterapisë Bio Center, Prishtinë, Kosovë
+          </p>
         </div>
       </div>
+    </div>
+
+    {/* RIGHT SIDE - LOGO (visible only on large screens) */}
+    <div className="hidden lg:flex items-center justify-center w-1/3">
+      <Image
+        src="/physio.png"
+        alt="Bio Center Logo"
+        width={500}
+        height={500}
+        className="object-contain max-h-[400px] opacity-90"
+        unoptimized
+      />
+    </div>
+  </div>
+</div>
 
       {/* Harta Google */}
       <div className="mt-16 w-full h-[650px] rounded-2xl overflow-hidden shadow-lg border border-green-200">
