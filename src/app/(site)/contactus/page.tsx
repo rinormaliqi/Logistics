@@ -100,10 +100,10 @@ export default function ContactUs() {
         </Link>
 
         {/* Email */}
-        <Link href={"mailto:fizioterapiabiocenter@gmail.com"} className="w-fit">
-          <div className="flex items-center gap-4 group w-fit p-2 rounded-lg transition-all duration-300 hover:bg-gray-100/50 hover:scale-[1.02]">
+        <Link href={"mailto:fizioterapiabiocenter@gmail.com"} className="w-fit max-w-full">
+          <div className="flex items-center gap-4 group w-fit max-w-full p-2 rounded-lg transition-all duration-300 hover:bg-gray-100/50 hover:scale-[1.02]">
             <Icon icon="ph:envelope-simple" width={32} height={32} className="flex-shrink-0" />
-            <p className="text-lg font-normal group-hover:text-green-400 transition-colors">
+            <p className="text-lg font-normal break-all min-w-0 group-hover:text-green-400 transition-colors">
               fizioterapiabiocenter@gmail.com
             </p>
           </div>
